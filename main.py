@@ -9,13 +9,14 @@ from s02_chambai import chambai
 #region testkey_list
 testcase_list = [
   {'tc_name': 'tc0', 'input': {'name':'Mom'}, 'output':'Hi Mom!'},
-  {'tc_name': 'tc0', 'input': {'name':''},    'output':'Hi!'},
+  {'tc_name': 'tc3', 'input': ['Mom'],        'output':'Hi Mom!'},
+  {'tc_name': 'tc4', 'input': {'name':''},    'output':'Hi!'},
   {'tc_name': 'tc1', 'input': {},             'output':'Hi!'},
   {'tc_name': 'tc2', 'input': {'name':None},  'output':'Hi!'},
 
-  {'tc_name': 'tc3kho', 'input': ['Mom', 'Dad'],             'output':'Hi Mom, and Dad!'},
-  {'tc_name': 'tc4kho', 'input': ['A', 'B', 'C'],            'output':'Hi A, B, and C!'},
-  {'tc_name': 'tc5kho', 'input': ['1', '22', '333', '4444'], 'output':'Hi 1, 22, 333, and 4444!'},
+  {'tc_name': 'tckho1', 'input': ['Mom', 'Dad'],             'output':'Hi Mom, and Dad!'},
+  {'tc_name': 'tckho2', 'input': ['A', 'B', 'C'],            'output':'Hi A, B, and C!'},
+  {'tc_name': 'tckho3', 'input': ['1', '22', '333', '4444'], 'output':'Hi 1, 22, 333, and 4444!'},
 ]
 #endregion testkey_list
 
