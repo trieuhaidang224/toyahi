@@ -27,9 +27,40 @@ hi('Mom', 'Dad')             | Hi Mom, and Dad!
 hi('A', 'B', 'C')            | Hi A, B, and C!
 hi('1', '22', '333', '4444') | Hi 1, 22, 333, and 4444!
 """
+
 #endregion debai
 
+
 #region bailam
-def hi(name):
-  return 'todo'
+def hi(*args):
+   result = ''
+   length = len(args)
+
+   # Kiểm tra nếu không có đối số hoặc đối số đầu tiên là rỗng hoặc None
+   if length == 0 or (args[0] == '' or args[0] is None):
+      result = 'Hi!'
+
+   # Nếu chỉ có 1 đối số và nó là None
+   elif length == 1:
+      result = 'Hi ' + args[0] + '!'
+
+   # Nếu có 2 đối số
+   elif length == 2:
+      result = 'Hi ' + args[0] + ', and ' + args[1] + '!'
+
+   # Nếu có 3 đối số
+   elif length == 3:
+      result = 'Hi ' + args[0] + ', ' + args[1] + ', ' + 'and ' + args[2] + '!'
+
+   # Nếu có 4 đối số
+   elif length == 4:
+      result = 'Hi ' + args[0] + ', ' + args[1] + ', ' + args[
+          2] + ', ' + 'and ' + args[3] + '!'
+
+   return result
+
+
+print('=============================')
+print(hi(None))
+
 #endregion bailam
